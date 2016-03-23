@@ -53,6 +53,13 @@ Open `http://localhost:8080`, go to the Content Studio, create a new site
 basic page template to your site (I've called it `Page`), that handles content
 of type `Page`. Then you're ready to go!
 
+### Step 5: Deploy your app / library to `$XP_HOME/../test-site`
+
+You can now deploy (or install) whatever application or library you want to
+test out. Just remember to deploy them to the same `$XP_HOME` as the test site.
+The way I do this is setting the `$XP_HOME` environment variable to
+`$XP_HOME/../test-site`. If this works for you, feel free to do the same.
+
 ## Open open source
 
 If you see a bug or something you'd like to see fixed, create an issue. If you
