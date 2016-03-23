@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Test site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <div class="site-container">
+            <header class="site-header">
+                <div class="container">
+                    <h1 class="site-header-logo">Test site</h1>
+                </div>
+            </header>
+            <main class="site-content">
+                <div data-th-if="${mainRegion}" data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+                    <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+                </div>
+            </main>
+        </div>
+        <script data-th-src="${portal.assetUrl({'_path=scripts.js'})}"></script>
+    </body>
+</html>

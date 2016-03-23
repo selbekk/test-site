@@ -1,0 +1,7 @@
+<page>
+    <display-name>Page</display-name>
+    <config></config>
+    <regions>
+        <region name="main"/>
+    </regions>
+</page>
